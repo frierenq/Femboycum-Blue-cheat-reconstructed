@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-22T22:38:50.800481Z",
+  "source_description": "Analyst-authored bounded semantic projections and authored console fixtures from the supplied FemboyLose historical embedded core; not original product source.",
+  "source_core_reference": {
+    "sha256": "682ce73b371349f87da6fd9365f8550e240dcdb97951e80445e70286275ad96e",
+    "bytes": 55578624,
+    "stored_address_base": "0x412a0000",
+    "reference_is_build_dependency": false
+  },
+  "copy_policy": "Recovered subtree only: .hpp and authored *_tests.cpp copied with original source bytes preserved. No original image, asset, object, executable, saved pass output, third-party source, or unrelated application source copied into recovered/. Separately selected authored analysis tools are documented under tools/ and research-tools/.",
+  "license_status": "No license file or explicit license grant found in this recovery subtree. Authorship statements are evidence of provenance, not a license grant. No grant inferred. Public redistribution licensing remains unresolved.",
+  "evidence_limitations": [
+    "Static selected instruction contracts and authored semantic fixtures do not establish original-runtime equivalence.",
+    "Recovered schemas, calls, event eligibility, ownership, resets, Lua ABI and feature lifetimes remain partial; consult the original STATUS.md and findings.",
+    "Integer address constants identify research evidence or simulated storage; they do not authorize dereference or reproduce original layout ownership.",
+    "Some numeric leaves rely on x86/SSE/SSE2 and default MXCSR. Current fixtures are compiled with C++20 and MSVC /fp:strict; x86 uses /arch:SSE2.",
+    "The historical model-copy step did not execute any original game, DLL, VM, injector or service. Later prepared-copy compilation and independent fixture results are recorded separately in VALIDATION.md; they do not establish historical compatibility."
+  ],
+  "source_file_count": 33,
+  "authored_test_suite_count": 16,
+  "cmake_targets": [
+    "recovered_api_overloads_tests",
+    "recovered_bruteforce_state_tests",
+    "recovered_desync_math_tests",
+    "recovered_hidden_overrides_tests",
+    "recovered_inverter_decision_tests",
+    "recovered_inverter_request_tests",
+    "recovered_localization_key_tests",
+    "recovered_rotation_math_tests",
+    "recovered_turn16_quantization_tests",
+    "recovered_button_pulse_tests",
+    "recovered_choice_state_tests",
+    "recovered_property_lookup_tests",
+    "recovered_sequence_cache_builder_tests",
+    "recovered_sequence_selector_tests",
+    "recovered_text_setting_tests",
+    "recovered_vector_values_tests"
+  ],
+  "files": [
+    {
+      "path": "antiaim-accessors/api_overloads_tests.cpp",
+      "sha256": "6b84b7834b3de2db20474f7c7a0ab9f51a4da7e9d3d246ae596d3006571a8173",
+      "bytes": 2105,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/api_overloads.hpp",
+      "sha256": "a94c6624a1b4df413527e836724375ed33cef19fd838da2c09831aa1899859cc",
+      "bytes": 1943,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/body_yaw_configuration.hpp",
+      "sha256": "e119d67a00817d37ff2653f9d564e5d15b7ea7d3cf47858e5e6cb1ee60da4522",
+      "bytes": 997,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/bruteforce_state_tests.cpp",
+      "sha256": "774a154906ef00f848214e691f8a025d3d001eb6bf2abe3b361826674b449862",
+      "bytes": 8248,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/bruteforce_state.hpp",
+      "sha256": "62a2ba71f653a7c54a21bcc0c0e5dcc7f673d3d856b53c9fee13fbf9e0b0b201",
+      "bytes": 3858,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/desync_math_tests.cpp",
+      "sha256": "60623163bf3173cbc0b70f1fc055548a18785f7a6ecb046ad734bca12ac543fa",
+      "bytes": 2633,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/desync_math.hpp",
+      "sha256": "0e77f92a5c17ba0e5d50398294b79a4ba4d81dcc306b651a8bf3880b9b3f3239",
+      "bytes": 1989,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/hidden_overrides_tests.cpp",
+      "sha256": "379423a6ed8f8013d5fe147d85587630b8be14c41b637ba554b2f84ebfd1eea6",
+      "bytes": 2875,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/hidden_overrides.hpp",
+      "sha256": "9fa15f8be8650d4c291f65a165009c6aa5c58bd1748cd5d4507a73d76434e674",
+      "bytes": 1508,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/inverter_decision_tests.cpp",
+      "sha256": "7ffc85000176b1c65ebfaefc6cd5fca3e9fcdcb92f37a72efdbdc6300f0d9028",
+      "bytes": 10539,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/inverter_decision.hpp",
+      "sha256": "9eed7cdc0a5f4d867aeac90f2c8d375b28b0734991d79585aa5ee37322bb4992",
+      "bytes": 6035,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/inverter_request_tests.cpp",
+      "sha256": "ac0e108d5a0e968638deddc403db750d76a0928cbb930f4ede97ff925b894108",
+      "bytes": 3541,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/inverter_request.hpp",
+      "sha256": "c8c67b92cdb679d4ea8d1c0cbcb4b401f598d2168f56c69a30e15e1e7642b189",
+      "bytes": 1057,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/localization_key_tests.cpp",
+      "sha256": "cb29c0f54f57759cf93056129faeb8a3debef0f10987e76aae0bfcfbe7b3f2dc",
+      "bytes": 2280,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/rotation_math_tests.cpp",
+      "sha256": "9c3983a87b46fc96153df45f57a31a2e6daf92ec9f1b7eded709e740d75c3c8b",
+      "bytes": 2404,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/rotation_math.hpp",
+      "sha256": "976ef42eca25f1cb408bcd789f1469492e85c64e1cdfbfd6f4360536efe875f7",
+      "bytes": 1223,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/turn16_quantization_tests.cpp",
+      "sha256": "a8991bbd1d777d23e2eb175cdd978767253344fa6be6de07ec36ce3ec09dbd8e",
+      "bytes": 3019,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "antiaim-accessors/turn16_quantization.hpp",
+      "sha256": "22b4854b4e0cab395bdae89184ffe495be6c9a7e108e86aff440937bc7126116",
+      "bytes": 1002,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "button-callbacks/button_pulse_tests.cpp",
+      "sha256": "58c7dd972bd71adddc184fdae20f64d69d0dd93be0e452ebf41ec3c29cbe30ad",
+      "bytes": 3234,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "button-callbacks/button_pulse.hpp",
+      "sha256": "e91b161487c0d61a8351183e326706398b0f68b05f888fe85b556c0eaac695f2",
+      "bytes": 1668,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "choice-controls/choice_state_tests.cpp",
+      "sha256": "b89c2f291ca77b2d869f7fe4955f17e25c8014aeb0f0f87b7711d24b7dd150cd",
+      "bytes": 7083,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "choice-controls/choice_state.hpp",
+      "sha256": "45c7ca03491a71c1fb4d26278187eaf4b77f27d3bdbd0fb7c66c40019efba631",
+      "bytes": 7138,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/layer_predicate.hpp",
+      "sha256": "295e62b5f6cf8bf0ac8a56acc5125752eee48dffc40a929d5a40c263f43829f1",
+      "bytes": 680,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/property_lookup_tests.cpp",
+      "sha256": "3f0123e0e6e05a7fc3bd28c84def65e38f8518f9edd1cf9021c3974dab9c1c60",
+      "bytes": 4219,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/property_lookup.hpp",
+      "sha256": "b4255aa131d2e743ee2bcda915e690ff0fe7519b6f3c12be2fbe64d06d86ddd3",
+      "bytes": 2116,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/sequence_cache_builder_tests.cpp",
+      "sha256": "94110418531c3e13d7ae73a5ff3a7e18c31845d3384bd9ae79b65f0771126781",
+      "bytes": 3175,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/sequence_cache_builder.hpp",
+      "sha256": "aaef8bfbbbe3653238d996a049882b6e34970ed40f52900b21e7131a57f21d07",
+      "bytes": 1382,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/sequence_selector_tests.cpp",
+      "sha256": "ef6e14123921d85d60c28824797e8fb4c51a88127efbe52ca08076eb2eaddafa",
+      "bytes": 3396,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "native-consumers/sequence_selector.hpp",
+      "sha256": "155c3e98a6e96effd873229b0623a3f4f6fc80615b937b3bbfae3c46e9b43523",
+      "bytes": 1317,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "ui-controls/text_setting_tests.cpp",
+      "sha256": "9f4eab9de5304a649f31725a2a154dc1ccdcce6b72fbc6e98b9bb9b361a8dc0a",
+      "bytes": 4514,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "ui-controls/text_setting.hpp",
+      "sha256": "05243fc7950b9a4bef7c9c6058bb074cf5dc4c03488ad050583e2a2596deb6dd",
+      "bytes": 3987,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "value-math/vector_values_tests.cpp",
+      "sha256": "09e21566ae643a2c5a32b4edb89856121ea988af9a9df082b71f34f9685f6009",
+      "bytes": 3993,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    },
+    {
+      "path": "value-math/vector_values.hpp",
+      "sha256": "b8efa209b96f8adbbf0c39880b650d9c4062e05dd28a507f42e79d5b5b985ac3",
+      "bytes": 2952,
+      "byte_identical": true,
+      "license_grant_inferred": false
+    }
+  ],
+  "publication_preparation": "Local candidate only; model source hashes retained. Private filesystem pointers removed. Rights review and a project license remain unresolved."
+}

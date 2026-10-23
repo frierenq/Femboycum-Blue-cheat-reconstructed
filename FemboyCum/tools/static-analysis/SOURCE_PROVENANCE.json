@@ -1,0 +1,30 @@
+{
+  "scope": "Source-only optional static utilities; no original image or output included",
+  "license_status": "No public grant assigned by this manifest",
+  "files": [
+    {
+      "file": "TargetedFunctions.java",
+      "historical_relative_path": "th/outputs/FemboyLose-Native-Recovery/tools/TargetedFunctions.java",
+      "historical_sha256": "e92324d75aaaac87219560c856520dbc709bb9b6c0bf95e275e40d701298c04a",
+      "candidate_sha256": "e92324d75aaaac87219560c856520dbc709bb9b6c0bf95e275e40d701298c04a"
+    },
+    {
+      "file": "AssumedFunctions.java",
+      "historical_relative_path": "th/outputs/FemboyLose-Native-Recovery/tools/AssumedFunctions.java",
+      "historical_sha256": "9a0a2e4e4f42a523a886bc714e9f952523656bb08413270d8e192721d2a371b2",
+      "candidate_sha256": "a7887a6368c548e66f4cb9959d55b753eb7b5bc50e4b8f67109305368a47d42f"
+    },
+    {
+      "file": "literal_evaluator.py",
+      "historical_relative_path": "th/outputs/FemboyLose-Native-Recovery/tools/literal_evaluator.py",
+      "historical_sha256": "ddd487dfbc20ccc7cff938693de722ebd6901fd7369cffc9dcd50438a0cbad9c",
+      "candidate_sha256": "8410e6bb0a3b0cf4fb469a1e15dbf6f2a0ad52573b9ddab1a6e7d3944b0fb904"
+    },
+    {
+      "file": "overlap_cfg.py",
+      "historical_relative_path": "th/outputs/FemboyLose-Native-Recovery/tools/overlap_cfg.py",
+      "historical_sha256": "94894fe67991ebd96072914f23a62c029c7a3142baedf758ca34f62cc46bd07b",
+      "candidate_sha256": "b3466bc61eb1f6aad42a8a0dcb5cd97cf50413d5fa4d2814ee1da68422bfb527"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "configurePresets": [{
+    "name": "windows-x86",
+    "displayName": "Isolated MSVC Win32 research build",
+    "generator": "Visual Studio 18 2026",
+    "architecture": "Win32",
+    "binaryDir": "${sourceDir}/build/windows-x86",
+    "cacheVariables": { "BUILD_TESTING": "ON" }
+  }],
+  "buildPresets": [{ "name": "windows-x86", "configurePreset": "windows-x86", "configuration": "Release" }],
+  "testPresets": [{ "name": "windows-x86", "configurePreset": "windows-x86", "configuration": "Release", "output": { "outputOnFailure": true } }]
+}

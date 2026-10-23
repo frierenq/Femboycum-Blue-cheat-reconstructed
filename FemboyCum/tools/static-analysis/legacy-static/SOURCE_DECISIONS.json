@@ -1,0 +1,239 @@
+{
+  "scope": "34 top-level Native-Recovery source analyzers; no reference data copied or run",
+  "files": [
+    {
+      "file": "bind_animation_fields.py",
+      "decision": "include-source-only",
+      "reason": "Joins selected animation-field registration records with static type/name evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "88c076ef294ffb24d8e59e073786e265063f26c9d7fa7bd1e9c45c0ac7bba49e",
+      "candidate_sha256": "420625c877e81df05ab35874be83b336182b18b08a2c130700d8b6538f268f4d"
+    },
+    {
+      "file": "bind_math.py",
+      "decision": "include-source-only",
+      "reason": "Indexes selected value-math registrations and analyst name leads. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "3f2b7e6bf9b9d34abd50450dd96ce0509d33ef8cbe0ad88762660dfb9e845f6e",
+      "candidate_sha256": "d3fef4c2396932904c6cbdb20aa1d9a959f5213c5967a275c27a5011251bf469"
+    },
+    {
+      "file": "bind_overlay_fields.py",
+      "decision": "include-source-only",
+      "reason": "Joins selected overlay-field registration records with static name evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "ceeae7f354c9e6f470fbccb9c3428504d77f3defc6444777cf279df4471919ac",
+      "candidate_sha256": "e645cf97ac38283b74dbd98265ea401ab0d2610f8264b7554879d10e89c5fa7f"
+    },
+    {
+      "file": "decode_type_literals.py",
+      "decision": "include-source-only",
+      "reason": "Decodes selected type-name literal leads from reference bytes and prior exports. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "eb1bc559598a681df7816e848f3748bfee7c0f1b3121452bc1c7cfed37265e22",
+      "candidate_sha256": "b7b7c2197d33472c7eb5bd07f46090faf1be82d109b9a1545952015500e4fdad"
+    },
+    {
+      "file": "decompile.ps1",
+      "decision": "exclude",
+      "reason": "Historical Ghidra launcher with local Java and project paths; generic Java exporter retained instead.",
+      "source_sha256": "71dd1935bc18f83e4c305f5ef31f2586559ca4bc783e1a88fc9bd0262899b78f"
+    },
+    {
+      "file": "decompile_assumed.ps1",
+      "decision": "exclude",
+      "reason": "Historical Ghidra launcher for conditional overrides; generic Java exporter retained instead.",
+      "source_sha256": "88a9fd084fdcc3b0c13cb8c197dbd091729331e9f328276b290dd5a60a96a2f7"
+    },
+    {
+      "file": "prepare.py",
+      "decision": "exclude",
+      "reason": "Extracts/copies protected original core and inventories deployed binaries; not a source-only static analyzer.",
+      "source_sha256": "ac34dd3983fb36a9e58fc069768847a6a2531dc2bd0c82c119496d3d7be3e7f5"
+    },
+    {
+      "file": "prepare_guard_assumptions.py",
+      "decision": "exclude",
+      "reason": "Produces conditional guard-byte replacements for the protected core; outside publication scope.",
+      "source_sha256": "b7fbbabfc23096f86d9e4f804f2aef858d67f21ccc383dc05168e9ec3791d84d"
+    },
+    {
+      "file": "registrations.py",
+      "decision": "include-source-only",
+      "reason": "Indexes selected group registration candidates with a bounded literal evaluator. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "3e58d2ae97ce2ab940c69c17d951c1948ef12fab1e07dbd863310af6ac9e19b2",
+      "candidate_sha256": "b3fc01dd9ffe0459462ad1a8b8f24ee083f75b3b32964d3a39bbbdd26d28d66d"
+    },
+    {
+      "file": "scan_native_callers.py",
+      "decision": "include-source-only",
+      "reason": "Indexes direct native call leads in the pinned reference image. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "63289ef9f1aabce9ed1e45364b1c857808b0ddb1771993346a78b6f54430b141",
+      "candidate_sha256": "4da15cd3b5dceead3ccf6a5b4a00a2915f720720e82a94ad2c50ddd23742f8e0"
+    },
+    {
+      "file": "scan_registrars.py",
+      "decision": "include-source-only",
+      "reason": "Indexes registrar name candidates with a bounded literal evaluator. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "ad7860bbf2a8dc3ea2b788c7bf63fc8772749816a8b3000f641f3b74e26ef5ec",
+      "candidate_sha256": "8b5e2b638176a0856b2d5bc63ec848ed01b014e6172503ac6eb8f97107c1b9d4"
+    },
+    {
+      "file": "verify.py",
+      "decision": "include-source-only",
+      "reason": "Checks initial UI-control reference provenance, registrations, and fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "838f29991161c872baeba33c6ac8d0cc2111bf1ff00ed8459cecba1d0b83a143",
+      "candidate_sha256": "10ad9c4e97212ede49b275c00ec2666741b307934efc7b46c24fa13ebc575777"
+    },
+    {
+      "file": "verify_animation_compounds.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected compound animation property contracts against private analysis evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "7f4f0ba72835720c60f6955116445df9c1d0523af3f980f0232b455915207a87",
+      "candidate_sha256": "ed93f0d91d407bd934b84e139aef19d71fae1f2e534297fb20a8c7e79c2a52e8"
+    },
+    {
+      "file": "verify_animation_specials.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected special animation property contracts against private analysis evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "9abc56f239fc87b23bb7ba2d25d105470995fa6efef388e78780ed9153088f3f",
+      "candidate_sha256": "39f6a471925e833070ed08d6c1751c742eb85970460041860434ef3acadb159a"
+    },
+    {
+      "file": "verify_antiaim_overloads.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected anti-aim overload bindings and authored semantic fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "2d182fcd462c539802b30775846d52a849bb1d74fd31e9f0164234c00ae98b87",
+      "candidate_sha256": "327df230fca99012eb06444ad203474d54c56ffcb44af98fe05db35be7e821d6"
+    },
+    {
+      "file": "verify_bruteforce_state.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected brute-force state instruction contracts and authored fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "3b816fd4bd054c8d548f9d83f373ed07eebb5a149eb762744e6ae536145295d7",
+      "candidate_sha256": "4bbe807510324e7246dc5a746e829edcf491a6d4f055837228202fc447d7f72a"
+    },
+    {
+      "file": "verify_buttons.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected button callback and lifetime contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "a1f329868488562816d195f5d15fe17234c6e5be623eeb147edad1b8b2c0733c",
+      "candidate_sha256": "4c34921104850126f200be9459a0dbc1fc79c8b93befc07a91acee3a41f06460"
+    },
+    {
+      "file": "verify_choices.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected choice-control contracts and authored fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "803d7cff21fd7215bc2ddd81292705f98ae118795270f636bb9cc4ee3a4f0761",
+      "candidate_sha256": "4142a6eb31f3e222acbc8e998b9b620f2b5cdc9f67debef91608e7ee922f61ad"
+    },
+    {
+      "file": "verify_config_name_joins.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected configuration/catalog joins; requires explicit FC_SOURCE_ARCHIVE. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "7aadca1fc0733b38fb149a433f89df22b54ea4453885cf8256c0ee0694f1c61d",
+      "candidate_sha256": "7305715b3c8d3a5f635fbac9c74cfccb68c48f8efceeac9519a185b121bc02c2"
+    },
+    {
+      "file": "verify_desync_math.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected desync math bindings and authored fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "c6880b136aa84e03f9a7f747d00c0957a1cf32341dda9f58a67ba59d4cbcf0ef",
+      "candidate_sha256": "10368ac9e2ea9ccef77416edaf9783b334848aaaf6acd0b7256600ba098d31ec"
+    },
+    {
+      "file": "verify_duplicate_registration.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected duplicate registration evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "6014b939f6fddd037214d62fea73a205c0ce2562eb90d1060e9330fb617a72c5",
+      "candidate_sha256": "43a9027269311098a802861a31ea6542290f1acf6d0c2d86479827fa49b6397f"
+    },
+    {
+      "file": "verify_entity.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected entity-state and animation-field contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "f5f5a8433a8ed0a34165480f1a974b46eadce80ae4430f4ee07b4ea4a3e5a94c",
+      "candidate_sha256": "5839fe7069a395f04b25f2802bbd6fbba649bd30610d23049d0ca32d32a528fd"
+    },
+    {
+      "file": "verify_hidden_overrides.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected hidden override/context initialization contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "7881499129e8396e1fc35696013f6747cd01c99ea37bb4f445ebd8e59f786d46",
+      "candidate_sha256": "25572ae8d17aa5d8329e5c59f88a4612d5a58db40042af08f4276b9e000a3936"
+    },
+    {
+      "file": "verify_inverter_decision.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected inverter decision and RNG binding contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "4c5a9ce136733dead936b46233b4411f810c2e84ee3fd51b599d3e398ac58740",
+      "candidate_sha256": "a7cc23632f37fb21a0e1a047b6f83622b281fc772ab3310b47c198368a4fa516"
+    },
+    {
+      "file": "verify_inverter_request.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected inverter request branch and semantic contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "c0844c5d5b96b9cc7c1a9ee67f078b9ef7fd6a8c94409f872149d29be635f702",
+      "candidate_sha256": "470d9745cd9464c7773577e5e28a48081f7be08d0d98221d0a4db4e9866aef48"
+    },
+    {
+      "file": "verify_layer_specials.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected animation-layer special property contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "f6cb5940d2a0fac07707c955fa1223d6ec2a9c5f720c7d4b07190958e1bbc319",
+      "candidate_sha256": "4f87626f8d250a22f0b1f7b6e4619874e97b22441f47ca6843ea1c7099267066"
+    },
+    {
+      "file": "verify_math.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected value-math instruction contracts and fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "fd9823cc0f3a156479ff411c0ce493b46cd0875d5c8e50c59422a124be5d39c2",
+      "candidate_sha256": "7eb8bbe7fdc299305c05081dc71a412b4502dc9179d0dbd6424d258100266b9b"
+    },
+    {
+      "file": "verify_metamethod_names.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected userdata metamethod-name evidence. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "d455934d08958402fdebfce6e338fda39f55b14a0ba484e0fa981c94c0400129",
+      "candidate_sha256": "7799a56f43ced063c072952a8f475181339265dadf72f244357d64de038a1f66"
+    },
+    {
+      "file": "verify_native_properties.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected native property bindings and fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "fb996a97593e18c297f56252b3ccdbe2b241de92afc314bb94621aac965a64c2",
+      "candidate_sha256": "80800a4e5e1e5cc2ae9c228716ea5a49db8774159927f8cb7d2aeb0fa2c92a91"
+    },
+    {
+      "file": "verify_overlay.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected overlay-field and type contracts. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "ca9571333e69dcadf8346b2b1a9e2e63587915b6de59e3c14eb5ba733603bc98",
+      "candidate_sha256": "a3431001308cb9add53b26fef423790a023d8b6e4d13ef292dd765e3ad87f4e4"
+    },
+    {
+      "file": "verify_rotation_math.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected rotation math bindings and fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "ea991fa065cb1eab16a3a86e85ac519d3fdc5158ee91b9a03058736709f5bc12",
+      "candidate_sha256": "3d5448ccd687be11d480ca799424081f2461d875d56d8ef663a11f59d2da8192"
+    },
+    {
+      "file": "verify_sequence_cache.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected sequence-cache naming/fallback evidence with bounded literals. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "2cd10d9e4e576a85332312cf088ff52f159043470dfadb61f0932cce61797d5d",
+      "candidate_sha256": "f683e1169bd8450b6c9c00a80e5acde5e89228ab8ec54cf9c3e0619d1b8e198f"
+    },
+    {
+      "file": "verify_sequence_selector.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected sequence-selector evidence and authored fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "51a8c544c4aa9d2f76117cce752ae80d1119c42b62b6bc10ea1a4651268fbc8c",
+      "candidate_sha256": "32a4ac394b71c86d3e44a0f702fda6a0649ba24bcee19ee9e4928f5ff4b10051"
+    },
+    {
+      "file": "verify_turn16_quantization.py",
+      "decision": "include-source-only",
+      "reason": "Checks selected turn16 quantization evidence and authored fixtures. Source-only; explicit private reference/workspace inputs; generated evidence absent.",
+      "source_sha256": "bded3470525eedb4e36661f3d1dbe5c51dccd49e6d134665393a63470c8c0b2e",
+      "candidate_sha256": "e0ad5e8e70a0128621402e37b8d97ec21ed50c9831f93f918050eeac1030cd9a"
+    }
+  ]
+}

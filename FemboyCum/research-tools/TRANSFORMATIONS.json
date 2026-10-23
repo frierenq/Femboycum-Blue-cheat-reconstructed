@@ -1,0 +1,1521 @@
+{
+  "schema": 1,
+  "scope": "research .py/.cpp/.h/.hpp/.inc source only; no output/data/binaries",
+  "source_count": 171,
+  "counts": {
+    "hold_instruction_proof": 73,
+    "staged_source_only": 44,
+    "hold_sealed_bootstrap_evidence": 21,
+    "exclude_original_loader": 8,
+    "hold_raw_closure_proof": 5,
+    "exclude_raw_mapping": 1,
+    "hold_instruction_or_table_proof": 11,
+    "exclude_duplicate_snapshot": 7,
+    "exclude_copied_data": 1
+  },
+  "files": [
+    {
+      "research_path": "checkpoint-24/context-lifetime/verify_context_lifetime.py",
+      "source_sha256": "a2381692e1a03d3910a3a1d7f161172a7e89cae7165fca47535d6a036d635f46",
+      "source_bytes": 14544,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/hurt-gates/verify_hurt_gates.py",
+      "source_sha256": "cd6a06ed40dda21fadb4d1ddd7c6cc87290a7f3cf68557259ff1ce53a8312f9d",
+      "source_bytes": 11274,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/inspect_common.py",
+      "source_sha256": "e13e5253099d50dda13ae4aa5f76c0a7aa01ab0f77516efdc186b6f5da95970d",
+      "source_bytes": 865,
+      "disposition": "staged_source_only",
+      "reason": "static private-input disassembler",
+      "staged_path": "source/checkpoint-24/reset-eligibility/inspect_common.py",
+      "staged_sha256": "c7e7149bd0e739344c294d40ffa8e6153a52b35aa2828c2998aac6e554c9ce62",
+      "transformations": [
+        "core path -> FC_RESEARCH_CORE",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/inspect_nearby.py",
+      "source_sha256": "949aec950ff70a91443a51a497292c07460bf64cab56e3b314d9fef274f2a9b2",
+      "source_bytes": 764,
+      "disposition": "staged_source_only",
+      "reason": "static private-input disassembler",
+      "staged_path": "source/checkpoint-24/reset-eligibility/inspect_nearby.py",
+      "staged_sha256": "3754174e98b7612741a8e7111d2d1656e58d1b94bbba76f5e69fa546cafda508",
+      "transformations": [
+        "core path -> FC_RESEARCH_CORE",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/scan_code_constant_windows.py",
+      "source_sha256": "c451b1d7edaede5956a1a4134641fe470d024731272503f33c573a1d6acda76f",
+      "source_bytes": 4022,
+      "disposition": "staged_source_only",
+      "reason": "static decoded-operand lead scanner",
+      "staged_path": "source/checkpoint-24/reset-eligibility/scan_code_constant_windows.py",
+      "staged_sha256": "f6accbe540ac68cac76a5d7a43450975c0ff03394d998318d6f80acf1563c94f",
+      "transformations": [
+        "historical root -> FC_RESEARCH_ROOT",
+        "private core input -> FC_RESEARCH_CORE",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/scan_computed_pointer_leads.py",
+      "source_sha256": "b44f50b9d45810c94c2c780bcde44da7750a060df0c875edc599bd0e57c0b2be",
+      "source_bytes": 4528,
+      "disposition": "staged_source_only",
+      "reason": "static decoded-operand lead scanner",
+      "staged_path": "source/checkpoint-24/reset-eligibility/scan_computed_pointer_leads.py",
+      "staged_sha256": "b73e8b39a2708b9d871dfd441df392664ea4f0c2b8e1e58e0b636ff0c183ea6c",
+      "transformations": [
+        "historical root -> FC_RESEARCH_ROOT",
+        "private core input -> FC_RESEARCH_CORE",
+        "private decoded-operand input -> FC_RESEARCH_AUX_INPUT_DIR",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/scan_references.py",
+      "source_sha256": "d50394149d0810512daf2363e4f218a49cbd4d4e314787fb9aca64c1c5e6bed8",
+      "source_bytes": 1289,
+      "disposition": "staged_source_only",
+      "reason": "static byte-pattern lead scanner",
+      "staged_path": "source/checkpoint-24/reset-eligibility/scan_references.py",
+      "staged_sha256": "c6c2265586bb820e9110f5f06610ac1cbaf729851658097ff9942656def65676",
+      "transformations": [
+        "core path -> FC_RESEARCH_CORE",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/verify_common_branches.py",
+      "source_sha256": "90a26e0b5b8abcd976fb3b4b573cf21fbed6075d2e006a90527e57d09f844550",
+      "source_bytes": 4119,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/verify_entry_boundary.py",
+      "source_sha256": "5e59320cfc4c2f7e4296ce91b2d94a1acc66452aead7476c530a7efe480603a6",
+      "source_bytes": 1956,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/verify_handler_route.py",
+      "source_sha256": "bc4e8814cd531ed1cb7ac0ebb7368f694aa4cff4024007ff6abb08c82d329263",
+      "source_bytes": 3693,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/verify_initial_handler_events.py",
+      "source_sha256": "89e541146dccbb05220d3d4abf34af520ed9bb23513e44e0b8cd227f1a28faf6",
+      "source_bytes": 3280,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/reset-eligibility/verify_reset_entry.py",
+      "source_sha256": "c31fa9d78f4bcf7ad6ceca92b9a39d435298dee462288326d16710e34dea2334",
+      "source_bytes": 4938,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-24/tail-differential/compare_hurt_instructions.py",
+      "source_sha256": "1356b20a2d1eebb7e2c620486aa3e8f0e6fefc1741b8037acd3b9cbe097315b8",
+      "source_bytes": 13997,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-25/feedback-delivery/verify_feedback_delivery.py",
+      "source_sha256": "a1a7176c8010d46420b8c441b1dfd3c7348b2abcb400cbf0e5004409e89756fb",
+      "source_bytes": 7690,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-25/feedback-eligibility/verify_feedback_eligibility.py",
+      "source_sha256": "6bb950d93acd7fe105c88f5f5197979efe12e45cdeec5d820e2cb6561530519d",
+      "source_bytes": 10735,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-25/feedback-eligibility/verify_normal_path.py",
+      "source_sha256": "8280b9461dd07e3e0840d1c9b01f61bafe7fedb7747d8a02070e9c87d781c633",
+      "source_bytes": 4234,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/abstract_trace.py",
+      "source_sha256": "c1fcd9bb224349c67cdb964e0950e1d0b4e9c952e71e21090a537a375119f825",
+      "source_bytes": 28408,
+      "disposition": "staged_source_only",
+      "reason": "authored bounded decoded-byte abstract interpreter",
+      "staged_path": "source/checkpoint-25/hook-installer/abstract_trace.py",
+      "staged_sha256": "6e900a39f7f731c1ab88d78a2581b9300c60f863ec607627c51a39cbff5474e4",
+      "transformations": [
+        "historical root -> FC_RESEARCH_ROOT",
+        "private core input -> FC_RESEARCH_CORE",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/finite_shift_forks.py",
+      "source_sha256": "432e4dadae4ad83403e1f2d4a7e37f2ed7787bf9e65ee61fbbc8225881411f25",
+      "source_bytes": 2387,
+      "disposition": "staged_source_only",
+      "reason": "authored abstract-domain fixture; requires abstract_trace",
+      "staged_path": "source/checkpoint-25/hook-installer/finite_shift_forks.py",
+      "staged_sha256": "d82e9227cc7e3af3d1455415eefcc602efb161168443b32a2bdd5d85c01ef51f",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/finite_shift_second.py",
+      "source_sha256": "c0ce513092a38ef6d548e6adbea5588dda089d81edfc37b1c0f940ca4441c930",
+      "source_bytes": 2215,
+      "disposition": "staged_source_only",
+      "reason": "authored abstract-domain fixture; requires abstract_trace",
+      "staged_path": "source/checkpoint-25/hook-installer/finite_shift_second.py",
+      "staged_sha256": "9c64bc7371a3533af710c29d5a914417fbbb1c5590f8d23da9e836f39c34f1f5",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/superseded-invalid-imul/symbolic_suffix.py",
+      "source_sha256": "a431558d04f56de98c04863ab286b2878ea5ec7e89f37c0ba9a924cfe081801f",
+      "source_bytes": 5858,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/verify_abstract_primitives.py",
+      "source_sha256": "3773df61e63110805b3d176ebf812b82844efe5d8efb41fb077d9d1017ab8b0a",
+      "source_bytes": 2107,
+      "disposition": "staged_source_only",
+      "reason": "authored interpreter regression; requires abstract_trace",
+      "staged_path": "source/checkpoint-25/hook-installer/verify_abstract_primitives.py",
+      "staged_sha256": "4cf807e3dd484a3132cd5a53a99307a3ebf687347e2a04e482a698866bb9d064",
+      "transformations": [
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-25/hook-installer/verify_hook_installer.py",
+      "source_sha256": "977c974388969bbc63cb68ba3e68ae5ef7bddce2a36e24cbdb699b4e023b8e16",
+      "source_bytes": 12652,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original instruction/CFG verifier or superseded fixture; selected transcript assertions are not in the public candidate."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/alias_slice.py",
+      "source_sha256": "1a8304476a925ac7fdce3f3a6b339ab794c7e9440d90c7dbb9668af809a6e5e9",
+      "source_bytes": 11487,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/audit_wrapper_patch_tables.py",
+      "source_sha256": "f48fff0e197c231a3ddaf0eb855aa4de786c3b7b631dcae1254067912c28d05c",
+      "source_bytes": 5909,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/cpuid_selector_slice.py",
+      "source_sha256": "46af8c60704205468c00f0245ccce37d48432de5c83b9a4dc6de15002bce6368",
+      "source_bytes": 7360,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/cpuid_wrapper_static.py",
+      "source_sha256": "6c57278f96a1d13e11794ea8d638673d8ba20445968f740541e3eb6302d34ce5",
+      "source_bytes": 4602,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/detours-terminal-paths/verify_terminal_paths.py",
+      "source_sha256": "6f48d73b0002a3183985c5fec4e025ee6278bbe30ac8bf2ade5c3792b54c18fd",
+      "source_bytes": 13268,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/external_c8_probe.py",
+      "source_sha256": "a6829e1f7ca4b3fd089aa16e628596ab584e832018d60595ec85d05080a07e9b",
+      "source_bytes": 1394,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/first_alias_forks.py",
+      "source_sha256": "dc3256225980df52066d1cea58d386a1e655066464ee616b55988d26dfcd3399",
+      "source_bytes": 3275,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/fs_boundary_probe.py",
+      "source_sha256": "ff8e9d13b6361a008ff3ecc7de141ce38da008b4dc780c7f0ce3d811ace19a5e",
+      "source_bytes": 4105,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/fs_dependency_probe.py",
+      "source_sha256": "885e1e138ba58ad9e1179408b3c2318a7fa4168a2aea253b5bcbd9e6bf83fa32",
+      "source_bytes": 2691,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/fs_operand_verify.py",
+      "source_sha256": "fba54e2706b6819295940ce8250a2be535613d28f23053203105262a83d699f2",
+      "source_bytes": 3321,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/fs_symbolic_slice.py",
+      "source_sha256": "549a9aa7943e812bd863a51da570c75566f864e863d641abdd9d0228883d3c58",
+      "source_bytes": 5278,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/fs_value_probe.py",
+      "source_sha256": "c243965a7864cca855d9944ea7271c126b1b4e5b50d690e7d1b6ab8d9840d18f",
+      "source_bytes": 1885,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/low_live_inputs_probe.py",
+      "source_sha256": "041c2911b329a9092427ab09db552513e2eaf7f92049bac530470d7e0b7e76d5",
+      "source_bytes": 1298,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_basis.py",
+      "source_sha256": "55136f268ad7ac565147c6f83d252da79a10840e1d5dcd499e50c2a0a38dc069",
+      "source_bytes": 1535,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_chain_probe.py",
+      "source_sha256": "3cc627abbe37cd7beb7bb054962835dcfd92000fb4ed73f0c099c14cc65b4825",
+      "source_bytes": 3062,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_diff.py",
+      "source_sha256": "242be38df131ea337f0d6e3384c10431330b259f6856f62b596642c2539bc22b",
+      "source_bytes": 2670,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_probe.py",
+      "source_sha256": "1f3cc21ac023d988b508984c61e3a4c0ec815c7296da05b49ad5c41f5fefdf38",
+      "source_bytes": 1349,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_reads.py",
+      "source_sha256": "9cae5124c60312a2de7f54a48134f4fcd13b747c024ee4619306060e299ae52d",
+      "source_bytes": 1772,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/post_word_selected_verify.py",
+      "source_sha256": "68d46c965251d9f374d823927f83b6fcf448632175f80e58dfec30cea4e0352e",
+      "source_bytes": 5635,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/preselector_slice.py",
+      "source_sha256": "b9830d81cb301bbc6a1c13c86dc0662bafb3d811f2777a6d7ea75562a6ec27fb",
+      "source_bytes": 6884,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-cl-byte-producers.py",
+      "source_sha256": "c65ddbced9ad96a037bdaf93bb21b3315900f1582181c2ea3e649a8deb29b2d2",
+      "source_bytes": 1918,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-cl-four-root.py",
+      "source_sha256": "28435d9b9d9764d5248793f96e2f016ffe55550a54864759ec66fe7d00e186c8",
+      "source_bytes": 4946,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-cl-slice.py",
+      "source_sha256": "4ed3336176acb0a080557b586cd5385ca4b8399f43f367e8a9084a70879271b1",
+      "source_bytes": 6670,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-detours-target-slot.py",
+      "source_sha256": "53ce6ff388357ae61770e86adef0bb8fea3e0e992290653378c1b9f12a442c6d",
+      "source_bytes": 6318,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-first-count-spill.py",
+      "source_sha256": "6c85ae18e23e81d86c5ac29fcd7d59f768b67ea8ab9dbaa493dfe89f00a101f2",
+      "source_bytes": 6070,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-second-count-continuation.py",
+      "source_sha256": "b7414b6ee80679439efd5b5fee2236d6c34949ac94c88402af3ac940da667876",
+      "source_bytes": 3068,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/REVIEW-second-count-source.py",
+      "source_sha256": "8605622417268fa68db22376bc91a33a5db8ccece13649779cd90bcf8e38e5f7",
+      "source_bytes": 4783,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/upstream_bit_slice.py",
+      "source_sha256": "2f251676e490871ddb55168e166f326f947ea45ec5f4e3024eb16b0bfeacf51c",
+      "source_bytes": 10709,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/verify_effective_dispatch.py",
+      "source_sha256": "d4216f5095e4e24239d14b6daed99db735e7b1209dbe6f4365e6d7fed813e144",
+      "source_bytes": 14203,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_conditional_probe.py",
+      "source_sha256": "b8d6ccd5ca95134d2b654b132413321717426b6355409ee90ae9a431fdde2896",
+      "source_bytes": 3209,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_conditional_route.py",
+      "source_sha256": "492b1b40fda7b374b95026004826645ecba8c2c1c1ba6e9225396a42b20ee1df",
+      "source_bytes": 8699,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_cpuid_contract.py",
+      "source_sha256": "d928ab7b87129ef16006ef083fff0d9ec3fcf4d35b26c892d8294535005e7e7e",
+      "source_bytes": 5836,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_disasm.py",
+      "source_sha256": "e9e2c3d0be21cf94281924da12615134fc9ab488d5cc5cc56d54370d809fa13f",
+      "source_bytes": 1067,
+      "disposition": "staged_source_only",
+      "reason": "static private-input wrapper disassembler",
+      "staged_path": "source/checkpoint-26/installer-symbolic/wrapper_disasm.py",
+      "staged_sha256": "ab5dc743e88421c495afada8cad2c979991900b357f47792bf61b9fdb92af65c",
+      "transformations": [
+        "historical root -> FC_RESEARCH_ROOT",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "private wrapper input -> FC_RESEARCH_WRAPPER_PE",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_h_diff_probe.py",
+      "source_sha256": "137e14052635b1de3a0065947840fb95a57327d22cfc3effcadcc8a77ac302f1",
+      "source_bytes": 2449,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "checkpoint-26/installer-symbolic/wrapper_h_taint.py",
+      "source_sha256": "f21974e7a2d8170bbb3dcda5daa9d89798f2e357a07c1a66d67d631f422d607d",
+      "source_bytes": 17221,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific symbolic/decoded route with selected instruction assertions or dependency on such a proof; needs transcript redaction and portability review."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/semantics/v1.py",
+      "source_sha256": "180ba780d9e7d3084154dd3b527d789a40a464045bc09490a5653b81cd881f3e",
+      "source_bytes": 25439,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Text-only trace parser embeds original core/watchpoint addresses and sampled private cell/register values; not yet parameterized without weakening fixed-case admission."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/semantics/v2.py",
+      "source_sha256": "5eac11bc7145f89a887e3d161185e250ba5ce5b48885e8c9d8dd647bbfb26724",
+      "source_bytes": 29978,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Text-only trace parser embeds original core/watchpoint addresses and sampled private cell/register values; not yet parameterized without weakening fixed-case admission."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/semantics/v3.py",
+      "source_sha256": "24fbe62b0cb87c4b72857a846d4487549d43a406edc21993eced0f8ab7c9e935",
+      "source_bytes": 32100,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Text-only trace parser embeds original core/watchpoint addresses and sampled private cell/register values; not yet parameterized without weakening fixed-case admission."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/verify_archive.py",
+      "source_sha256": "0b989b13dd588cd5538e005df104a5f5edf60386109be73ee370c5e0f16cb634",
+      "source_bytes": 24913,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Archive checker imports withheld case-specific bootstrap semantics and verifies excluded protected-core media/captures."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v1/preparation/native_raw_bootstrap_watch.cpp",
+      "source_sha256": "cf4159fdb20732430238431cbb7ab403a65821c6afd5177a01c421bf44fcc8f2",
+      "source_bytes": 50210,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v1/preparation/verify_prepared.py",
+      "source_sha256": "ea0bf92628cec9d25d725d5efc2b6e2d403c9934ca4a77db4913d7a90113fdf6",
+      "source_bytes": 4505,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Verifies the excluded original-core observer executable/media and case-specific core layout; not an independent portable text parser."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v2/preparation/native_raw_bootstrap_watch.cpp",
+      "source_sha256": "f0140f5d539ff16c239401cfebad11fd1ee75ab8c8c7beccb41d34cb6714dc01",
+      "source_bytes": 53466,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v2/preparation/verify_prepared.py",
+      "source_sha256": "ea0bf92628cec9d25d725d5efc2b6e2d403c9934ca4a77db4913d7a90113fdf6",
+      "source_bytes": 4505,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Verifies the excluded original-core observer executable/media and case-specific core layout; not an independent portable text parser."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v3/preparation/native_raw_bootstrap_watch.cpp",
+      "source_sha256": "bad734507e9013438879b3fe6ae160268ab73b628bde91af3ab8bb64931dab91",
+      "source_bytes": 55379,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v3/preparation/verify_prepared.py",
+      "source_sha256": "ea0bf92628cec9d25d725d5efc2b6e2d403c9934ca4a77db4913d7a90113fdf6",
+      "source_bytes": 4505,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Verifies the excluded original-core observer executable/media and case-specific core layout; not an independent portable text parser."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-boundary/versions/v3/review/describe_raw_boundary3.py",
+      "source_sha256": "fa2d4a336322c1718a4da770e442bc566c8424d76f4fd9ab6976b6e94c2ff337",
+      "source_bytes": 4190,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Text-only but interprets original core header/load-config and watched cells using fixed private boundary values."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/operational/finalize_vm_first_call_return1.py",
+      "source_sha256": "719f62c1c5ccd9e3eb12b0a5b2ab15b638138499d34d0d127c18a3b59772f6e3",
+      "source_bytes": 4283,
+      "disposition": "exclude_original_loader",
+      "reason": "Controls VirtualBox guest shutdown/snapshot after original-core experiment; not a text-only research utility."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/preparation/native_raw_bootstrap_watch.cpp",
+      "source_sha256": "b210ef41754dd3d1e6565f4647e921a113f9c42d0ed5c95dbdbc55711a7fb73f",
+      "source_bytes": 65585,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/preparation/verify_future_trace.py",
+      "source_sha256": "141277bd1090d6123340eb1dc31aa2490eb6876c865edc425a921dc4cd414106",
+      "source_bytes": 8852,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Text-only but embeds original core addresses, stopped register values and raw-page witness pins; requires extracting private case constants before public copy."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/preparation/verify_prepared.py",
+      "source_sha256": "4d4a92a92805b29ee3bb894754396d3c1c45f13f6b4f68f53f701946d1b0ce6f",
+      "source_bytes": 13800,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Verifies the excluded original-core observer executable/media and case-specific core layout; not an independent portable text parser."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/review/describe_trace.py",
+      "source_sha256": "d2f1c0f2c212c80b82465e876d880dfb064aa34cc442c26d2c470dbf84e6b1f2",
+      "source_bytes": 7952,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Data-only trace analysis, but embeds observed original core addresses, register/cell values and private guest identity; requires case constants externalized."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/review/review_media.py",
+      "source_sha256": "e815c7d513cb02e44fb704ee11dc9d6fbe3f3bdb31d1670c2c5932f2887fc18c",
+      "source_bytes": 5389,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "ISO checker expects exact excluded original core and VM observer members; retain privately with media, not as a standalone public tool."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/review/test_synthetic_controls.py",
+      "source_sha256": "7d82d590c59c6bb3e79705800cc13f1d597773bc433beeb9476b287f24eea811",
+      "source_bytes": 6631,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Controls import withheld trace gate and instantiate original-core address/cell fixtures."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/review/validate_capture.py",
+      "source_sha256": "a6c645d5b619e9008084ecf71c1850f12d3150cc9ec62880a0de3f8802cb9ce3",
+      "source_bytes": 18986,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Data-only trace analysis, but embeds observed original core addresses, register/cell values and private guest identity; requires case constants externalized."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-return/verify_archive.py",
+      "source_sha256": "2773fe68d51fbb3167e0466bad53cb07662cde121449d0a72fafcac9d8d401f7",
+      "source_bytes": 12295,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Archive checker imports withheld case-specific bootstrap semantics and verifies excluded protected-core media/captures."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-static/query_dia.cpp",
+      "source_sha256": "6fac26a3ee7d34d1d03cda9d6d591d7fdb5cc0b41f3b8f2fc772b7e64af8cbd0",
+      "source_bytes": 5868,
+      "disposition": "staged_source_only",
+      "reason": "caller-supplied public-PDB DIA query; no guest image execution",
+      "staged_path": "source/lua-events/bf-write/bootstrap-first-call-static/query_dia.cpp",
+      "staged_sha256": "6fac26a3ee7d34d1d03cda9d6d591d7fdb5cc0b41f3b8f2fc772b7e64af8cbd0",
+      "transformations": []
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-static/verify_first_call.py",
+      "source_sha256": "5f43a7e90291fdfb620fd3e50971cc2e1c8df4893283f5753f5d066a39a3590d",
+      "source_bytes": 10976,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-first-call-static/verify_package.py",
+      "source_sha256": "fd1839573d73a938a0cff9cab5537c4ddb97b02d2fbaa2964da67c65bf9ebfea",
+      "source_bytes": 1580,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-static/query_dia.cpp",
+      "source_sha256": "2c59e5ebafae75e871ebdf7ea4a613752ad782ca005608da0de16e982bc1598b",
+      "source_bytes": 5682,
+      "disposition": "staged_source_only",
+      "reason": "caller-supplied public-PDB DIA query; no guest image execution",
+      "staged_path": "source/lua-events/bf-write/bootstrap-static/query_dia.cpp",
+      "staged_sha256": "2c59e5ebafae75e871ebdf7ea4a613752ad782ca005608da0de16e982bc1598b",
+      "transformations": []
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-static/verify_build_selectors.py",
+      "source_sha256": "cc97e0e479c3dce814ffc09e2e728deb61e237768af3600b769f6ed18182c2e4",
+      "source_bytes": 9550,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-static/verify_header_order.py",
+      "source_sha256": "1934f012840b2bacc7cde3182a9d8d2a2bd9ed479c00888741397863b5c51c74",
+      "source_bytes": 7647,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-static/verify_package.py",
+      "source_sha256": "9ffcf3cf997a85e11ddeb25079a766eeacfc0b2b0c4a21392549b9d0cb0dcff1",
+      "source_bytes": 2078,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/bootstrap-static/verify_selected_inputs.py",
+      "source_sha256": "bf74c26911af586ade626a5276c8036f431f43657d14e0ca39e9755b86702a4b",
+      "source_bytes": 7831,
+      "disposition": "hold_sealed_bootstrap_evidence",
+      "reason": "Case-specific original-code/static selector proof or sealed VM media verifier; source embeds exact protected targets or expects excluded binary media."
+    },
+    {
+      "research_path": "lua-events/bf-write/crypt-bootstrap-gap/verify_gap.py",
+      "source_sha256": "1a99deb000b762f6325cd2c973c78c860fd6160ee965f0f89b3d59a84ff6027d",
+      "source_bytes": 12189,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-comparison-closure/verify_closure.py",
+      "source_sha256": "172f6fec3ba1067b42430b702280843264a036fb0fe098f874371890d7cd7424",
+      "source_bytes": 7490,
+      "disposition": "hold_raw_closure_proof",
+      "reason": "Exact original-code mapping/import closure assertions; keep private pending byte/transcript redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-comparison-closure/verify_mapping_plan.py",
+      "source_sha256": "172984df86dc57090475b460a9c9d71865732d3115e98841d3fa1229a485314a",
+      "source_bytes": 10135,
+      "disposition": "hold_raw_closure_proof",
+      "reason": "Exact original-code mapping/import closure assertions; keep private pending byte/transcript redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-comparison-closure/verify_prepared_build.py",
+      "source_sha256": "4dcad1d5634600a590fb0e550dc73899c3362c658b8864b696430e752fc8fff4",
+      "source_bytes": 3332,
+      "disposition": "hold_raw_closure_proof",
+      "reason": "Exact original-code mapping/import closure assertions; keep private pending byte/transcript redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/compare_results.py",
+      "source_sha256": "68035aa5c6fa44d0dbfd28ae0bb46e7a7d16b4e900145625660bc91553bb5797",
+      "source_bytes": 11272,
+      "disposition": "staged_source_only",
+      "reason": "strict text-only authored/native comparator; sealed guest texts omitted",
+      "staged_path": "source/lua-events/bf-write/native-reference-run-1/compare_results.py",
+      "staged_sha256": "9c2d83fe857f40e5f66f24f6d302675fda393c32ac8fe9b9da0c00e61476c4a2",
+      "transformations": [
+        "private guest identity and output path -> explicit environment",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/generate_cases.py",
+      "source_sha256": "cd99be160ad26db46154ca55d2986f0753f0bcf565945e761f15b63d18938229",
+      "source_bytes": 6143,
+      "disposition": "staged_source_only",
+      "reason": "authored deterministic fixture generator",
+      "staged_path": "source/lua-events/bf-write/native-reference-run-1/generate_cases.py",
+      "staged_sha256": "1db9ad7a41bf3c706bccdd086b60e0150f5bc0a6a6c1447202500e5fcaf84883",
+      "transformations": [
+        "generated fixtures -> explicit FC_RESEARCH_OUTPUT_DIR",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/test_compare_results.py",
+      "source_sha256": "23eb40e2523447b2e0298f468115094281dedfedb008352e9972fa36466a2640",
+      "source_bytes": 5882,
+      "disposition": "staged_source_only",
+      "reason": "synthetic controls for text-only comparator; authored fixture text omitted",
+      "staged_path": "source/lua-events/bf-write/native-reference-run-1/test_compare_results.py",
+      "staged_sha256": "21c7f1c1692607130fcddb049457feacc9161729e038fb8fcec4ed46dc532c5a",
+      "transformations": [
+        "private guest identity and output path -> explicit environment",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/tools/leaf/closure_manifest.hpp",
+      "source_sha256": "861511ae122883bf809a3b28908ab007178dc3a1a5a6636ac2c2b8c706e93bd1",
+      "source_bytes": 9547,
+      "disposition": "exclude_raw_mapping",
+      "reason": "Original-core instruction-span/closure mapping used by a native leaf harness."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/tools/leaf/leaf_reference.cpp",
+      "source_sha256": "d7e6eb7a9a24b170489a438a2c8cb67aebe6784adf47da71823172bae9f4ff3d",
+      "source_bytes": 22192,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "lua-events/bf-write/native-reference-run-1/tools/owned-probe/owned_probe.cpp",
+      "source_sha256": "f91721362c1b6f00483fea5c74a3df6005c75184ea6ebc81b68eb64ec3717dee",
+      "source_bytes": 6941,
+      "disposition": "staged_source_only",
+      "reason": "authored-only bit-writer probe",
+      "staged_path": "source/lua-events/bf-write/native-reference-run-1/tools/owned-probe/owned_probe.cpp",
+      "staged_sha256": "9fd809679d1fab6e4ba62953fd90042faeb0d517b2ac946313b30211f4b1e96d",
+      "transformations": [
+        "expectations file requires external FC_RESEARCH_OUTPUT_DIR; source/public-tree paths rejected"
+      ]
+    },
+    {
+      "research_path": "lua-events/bf-write/registered-crypt-runtime/verify_runtime.py",
+      "source_sha256": "701d788ab046e79cb40e2b13a58d4c0df2230e97ce7de94eca1cf05131ebada6",
+      "source_bytes": 9850,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/verify_bf_write.py",
+      "source_sha256": "d309f53d2a625795428ec3bdb17ea44ed7cc49356489e64644097e5afb36162d",
+      "source_bytes": 10088,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/verify_binding_reachability.py",
+      "source_sha256": "7f52e89e1ed0e9725c4cf584085ad91cdffeb1ac3746061ddd7be2668bb6707b",
+      "source_bytes": 5516,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/bf-write/wrapper-import-repair/verify_wrapper.py",
+      "source_sha256": "71c11dfe85ab7ca46fddfacad631659b80b883e82f356348ad51c28664987158",
+      "source_bytes": 12663,
+      "disposition": "hold_raw_closure_proof",
+      "reason": "Exact original-code mapping/import closure assertions; keep private pending byte/transcript redaction."
+    },
+    {
+      "research_path": "lua-events/callback-iteration/verify_callback_iteration.py",
+      "source_sha256": "d745cc84f5c78d15900d3aa7751504e680e6c72248f0c8680c67d36a44332897",
+      "source_bytes": 6970,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/event-factory/verify_event_factory.py",
+      "source_sha256": "1417931754fc459691525e7ae9acc22291f6118fa775be9e5d5cddbddcce5521",
+      "source_bytes": 4675,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/event-gc/verify_event_gc.py",
+      "source_sha256": "a9d9ac2c90696c7d72df2a2e840b190d83a9c963e8e6be0c8f5280a275439e34",
+      "source_bytes": 6495,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/event-tostring/verify_event_tostring.py",
+      "source_sha256": "07461509d810a2313e6dc34268ff8a8120ccac9cfc0535588cf1f9b3c648950d",
+      "source_bytes": 5587,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/event-type-verify.py",
+      "source_sha256": "aa13535075d19c3f0c2799a08b1f673bdd7d5a5e0479dc205f4cd2c62fcef712",
+      "source_bytes": 5689,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/namespace-publication/verify_namespace.py",
+      "source_sha256": "61b3b338ab2549dc47a6f396ce27d8355c0e8d80c9e455eda8c4bacfcb630360",
+      "source_bytes": 6434,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/object-lifetime/verify_object_lifetime.py",
+      "source_sha256": "e692e11cef8b75888ab18a8a191f42ac34da98f941eb9c84fc80f200b41893cd",
+      "source_bytes": 7108,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-call/callback-contract/verify_callback_contract.py",
+      "source_sha256": "129fdd4d3b08d759ffec017ac075c90a449545ae2b159934eb93b98dda9e7e9f",
+      "source_bytes": 9144,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-call/post-send-continuation/verify_post_send.py",
+      "source_sha256": "4eccfa1812e68582d6d06df4c07e54e4499838f81badfc3648cd871ab9a502e5",
+      "source_bytes": 9798,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-call/verify_special_call.py",
+      "source_sha256": "9baff02bd54df443eac6afdb8af3623205528a58b9b3727e7496bc2486d6a1d5",
+      "source_bytes": 9019,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-call/wrapper-guards/verify_fake_peb_allocation.py",
+      "source_sha256": "25e1b3c10afc7e79b1661576fbe11f4b7202e8e432e570e1b1656f6ec03830ab",
+      "source_bytes": 8750,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-call/wrapper-guards/verify_wrapper_guards.py",
+      "source_sha256": "a84ced354d2139bd89efb0e9c7039e2c8f43a995fe77c8ec781673173a59f2c2",
+      "source_bytes": 10639,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/engine-state-gate/packet-entities-origin/verify_packet_entities_origin.py",
+      "source_sha256": "1f71062b3244a699823d4dc569ec08389656d3b73ba3046dc198ef2508739bde",
+      "source_bytes": 8734,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/engine-state-gate/state-dispatch/verify_state_dispatch.py",
+      "source_sha256": "6aebf557977d29266f59e870ad5b318be29db59240ddf07915147090ec98462d",
+      "source_bytes": 5746,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/engine-state-gate/state-origin/verify_state_origin.py",
+      "source_sha256": "e3a352e14e2c50b012c9b331468fe6d01fae3ebeb6e180ed886960581d8eca7b",
+      "source_bytes": 8116,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/engine-state-gate/verify_engine_state_gate.py",
+      "source_sha256": "6298e146041cc8d51642a9dffd0a21df8e5ac467f4b585237bfc478dc722cb71",
+      "source_bytes": 8489,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/message-framing/verify_message_framing.py",
+      "source_sha256": "57f2ead6ab6fbc8ee4059ebbd72e8b05e7978deb16d10bc99b6a3a554d7a6dc6",
+      "source_bytes": 9327,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/netchannel-route/verify_netchannel_route.py",
+      "source_sha256": "31eda60632acc65edbacf86ef87497d132680cf5ac3c62050ad0cdf6ea5bc37c",
+      "source_bytes": 7463,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/send-method/verify_send_method.py",
+      "source_sha256": "ccd4d955d400a31846c4405691f1af52abb9781fc74cc871d9c28fbc0ae3fc5f",
+      "source_bytes": 8203,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/special-external-object/verify_external_object.py",
+      "source_sha256": "e9e189ad835202b4c3bb9264d586e92097829d675b3a30b465653a0e1405faed",
+      "source_bytes": 11211,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/verify_lua_events.py",
+      "source_sha256": "4c19e9e8212e33e4f3fb6742b4ef238c026a05993f94f31e2b674de0016ad32f",
+      "source_bytes": 13079,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "lua-events/voice-message-projection/oracle_probe.cpp",
+      "source_sha256": "533bd943f514751cd4067403805e71ab5c757df019921ec46aaa5b182b1fdca8",
+      "source_bytes": 1175,
+      "disposition": "staged_source_only",
+      "reason": "authored-only voice-message probe",
+      "staged_path": "source/lua-events/voice-message-projection/oracle_probe.cpp",
+      "staged_sha256": "28f81ffd69f5751b7a7e81a11e91f3ce6659e09da1e201067f3d16776313f01f",
+      "transformations": [
+        "removed dependency claim for excluded private oracle"
+      ]
+    },
+    {
+      "research_path": "lua-events/voice-message-projection/verify_oracle.py",
+      "source_sha256": "07fb47e3791dfdf6035284417ec65c49f87382faff57e724cd5b358adf1f4b24",
+      "source_bytes": 5836,
+      "disposition": "hold_instruction_proof",
+      "reason": "Case-specific original-core/engine instruction verifier or installed-engine oracle, with exact selected operand assertions; needs selective redaction."
+    },
+    {
+      "research_path": "runtime-identification/probe_runtime.py",
+      "source_sha256": "2beba6d26a35f2d3e8e7ab19c5ad9c6992b6f4d39610565992241b807ed1aa72",
+      "source_bytes": 2200,
+      "disposition": "staged_source_only",
+      "reason": "static private-input runtime string scanner",
+      "staged_path": "source/runtime-identification/probe_runtime.py",
+      "staged_sha256": "98262b34be8f5b0925565b569c92eb4df16620292c9ed7c3e7fac579985d5b0c",
+      "transformations": [
+        "workspace root -> FC_RESEARCH_WORKSPACE_ROOT",
+        "core input -> FC_RESEARCH_CORE",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "runtime-identification/probe_sources.py",
+      "source_sha256": "5cc853fc5366f5d0d692428fa71c32eab6d611501c98acce3fafc48c88b4bf3a",
+      "source_bytes": 2925,
+      "disposition": "staged_source_only",
+      "reason": "static private-input source/dependency indexer",
+      "staged_path": "source/runtime-identification/probe_sources.py",
+      "staged_sha256": "c8da044bdb1b16a8188b9e0894c2749834e635a5c129ca6105509b5f1f53c57c",
+      "transformations": [
+        "workspace root -> FC_RESEARCH_WORKSPACE_ROOT",
+        "supplied source tree -> FC_RESEARCH_SUPPLIED_SOURCE_DIR",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "runtime-identification/probe_xrefs.py",
+      "source_sha256": "2e8f7e79648f7ee6e72bdf4392534229bd00ef93fc2e75eaabb9ebdcd541729b",
+      "source_bytes": 2805,
+      "disposition": "staged_source_only",
+      "reason": "static private-input bounded xref scanner",
+      "staged_path": "source/runtime-identification/probe_xrefs.py",
+      "staged_sha256": "09d47cf50116fdff2cd20e9867357049fd8976aaafda8928433199b16f1e05f5",
+      "transformations": [
+        "workspace root -> FC_RESEARCH_WORKSPACE_ROOT",
+        "core input -> FC_RESEARCH_CORE",
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/fetch_registry_reader.py",
+      "source_sha256": "ebc48c7c6a4631ca584a5354dc0669c267384c81bd944c4efe89424d26aad32f",
+      "source_bytes": 1937,
+      "disposition": "staged_source_only",
+      "reason": "authored optional checksum-pinned upstream wheel fetcher; downloaded wheel excluded",
+      "staged_path": "source/vm-offline-inspection/tools/fetch_registry_reader.py",
+      "staged_sha256": "510f86b95f359569b9614d6e6ce8f39b2e5f625a9b7aa4aa6fcc781216902e22",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/select_receipts.py",
+      "source_sha256": "c20aac6aa17ade1188ebc8b728e4d9b27eee475b20a01a61d82a2811ee768226",
+      "source_bytes": 4561,
+      "disposition": "staged_source_only",
+      "reason": "text-only offline receipt selector; baseline data omitted",
+      "staged_path": "source/vm-offline-inspection/tools/select_receipts.py",
+      "staged_sha256": "e6aa533fa76c43f36e79bc4276040fa29fb5e206c48cf603b88e8f6aaec77494",
+      "transformations": [
+        "private baseline snapshot -> FC_VM_BASELINE_SNAPSHOT_UUID",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/verify_receipts.py",
+      "source_sha256": "254b7e01300e0904734f5480f56c65c8fc44d49856964c7caf8672c9fe03e584",
+      "source_bytes": 2333,
+      "disposition": "staged_source_only",
+      "reason": "text-only offline receipt verifier; baseline data omitted",
+      "staged_path": "source/vm-offline-inspection/tools/verify_receipts.py",
+      "staged_sha256": "fe91631a6bdbb4f5bda55e54f93402e0eaca112699a7db223ac8019006fdf84f",
+      "transformations": [
+        "receipt archive/snapshot -> explicit environment",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/vm_offline_hives.py",
+      "source_sha256": "7f2dec938115eba902d867932e799951c71f48b7d2d16ea0c44e61c0e258179d",
+      "source_bytes": 9439,
+      "disposition": "staged_source_only",
+      "reason": "authored read-only hive/log parser; requires caller's powered-off VDI and optional separately fetched registry reader",
+      "staged_path": "source/vm-offline-inspection/tools/vm_offline_hives.py",
+      "staged_sha256": "5acdb870faffdc97306dc2e080debe768f3951136f5b851c8c6b20cf3a4122cc",
+      "transformations": [
+        "guest profile path -> FC_GUEST_NTUSER_PATH",
+        "optional Python registry dependency -> FC_RESEARCH_PYTHON_LIBS",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/vm_offline_ntfs.py",
+      "source_sha256": "a542bc4f886d75261b3f9394064dcc6e30b5d7e702ddd46e2484f90d23683ff0",
+      "source_bytes": 10310,
+      "disposition": "staged_source_only",
+      "reason": "authored read-only NTFS metadata parser; generated receipts excluded",
+      "staged_path": "source/vm-offline-inspection/tools/vm_offline_ntfs.py",
+      "staged_sha256": "d3da70626dabfed38c6325462c60117fc203e8ea209e7ff98c68f4074a1eea10",
+      "transformations": [
+        "private sample-name filter -> optional FC_NTFS_SAMPLE_TERMS",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vm-offline-inspection/tools/vm_offline_vdi.py",
+      "source_sha256": "7cbf7f764a5b916d28e5c3133d79268396942983628402004b02f00e0f21cf8a",
+      "source_bytes": 8608,
+      "disposition": "staged_source_only",
+      "reason": "authored read-only VDI/GPT parser; generated receipts excluded",
+      "staged_path": "source/vm-offline-inspection/tools/vm_offline_vdi.py",
+      "staged_sha256": "dba6c45f14d02e4301ca0d6ae3c210a7a832dbebb9e9b4ff7272b48762c620d8",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/float-exp-interpreter.py",
+      "source_sha256": "e14a6841a9e51eb7c552468b55edbd2511611f7e3aa210b147c2685c637833e0",
+      "source_bytes": 24860,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/float-exp-tables.py",
+      "source_sha256": "d547b3e1ed0f2007102822425e3a8d1fd4f023af6e93ea4ab9b10bf662b8c848",
+      "source_bytes": 2968,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/float-helper-bounded.py",
+      "source_sha256": "67a4a8810c87e472140c0cffff154c3dcd6a0673082e7e2f64817aa858c60d57",
+      "source_bytes": 5495,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/float-helper-cfg.py",
+      "source_sha256": "03ba13b2b7f5bc0c14215efbc3f4e7cbf006ab0a85934396e9dae313f12c984b",
+      "source_bytes": 5306,
+      "disposition": "staged_source_only",
+      "reason": "static private-input CFG decoder; decoded output excluded",
+      "staged_path": "source/vstdlib-rng/float-helper-cfg.py",
+      "staged_sha256": "f4cc253a8211e90db171a89f93ecb4b35c0f8ecb0501de9507f5f853af2634b7",
+      "transformations": [
+        "private Python libs -> FC_RESEARCH_PYTHON_LIBS",
+        "installed DLL path -> FC_VSTDLIB_DLL",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports",
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/float-helper-finite.py",
+      "source_sha256": "a4f83dd1f1499b6de0d01d475880a0f17004b1f20a5e16cd6a2e6f41f04ada78",
+      "source_bytes": 13481,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/float-verify.py",
+      "source_sha256": "2d0a0a2afa44009fdf9bf8c7a23cc2911662fdf7e62d7c3e89667481d855665e",
+      "source_bytes": 17716,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/compare_status.py",
+      "source_sha256": "acaa2f1455b81ee397ae48392cddc898a4074bb2dca14fd22dcde95a0e187a71",
+      "source_bytes": 11576,
+      "disposition": "staged_source_only",
+      "reason": "text-only authored/native-status comparator; private captures excluded",
+      "staged_path": "source/vstdlib-rng/fp-status/compare_status.py",
+      "staged_sha256": "0fc251e43a93c97f62225ca19df7701c4f53ac34a457c727115112d03e926343",
+      "transformations": [
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/make_validation_receipt.py",
+      "source_sha256": "4e8e48eec577b5936f90d15e3cab206609b3804fda91e79c00344054cafa1647",
+      "source_bytes": 4047,
+      "disposition": "staged_source_only",
+      "reason": "text-only authored/capture receipt assembler; private capture and blocked core inputs omitted",
+      "staged_path": "source/vstdlib-rng/fp-status/make_validation_receipt.py",
+      "staged_sha256": "cd3a81c12dc234a8c6ace571dea5f199a179660d09942d1e6a4f9e737911722f",
+      "transformations": [
+        "authored source root -> FC_RESEARCH_SOURCE_ROOT",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/owned_status_probe.cpp",
+      "source_sha256": "e30bb738e222328b58df84b243a4e2bcc9d6c15b4aece8608562e8940019d978",
+      "source_bytes": 4444,
+      "disposition": "staged_source_only",
+      "reason": "authored-only RNG status probe; blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/fp-status/owned_status_probe.cpp",
+      "staged_sha256": "e30bb738e222328b58df84b243a4e2bcc9d6c15b4aece8608562e8940019d978",
+      "transformations": []
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/per-action-branches/classify_run3.py",
+      "source_sha256": "f9bd824b3791782eda127f03d2bf13b4d363dd048384661abbf8a85a1a0be7c0",
+      "source_bytes": 6174,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Imports withheld PE-derived finite approximation lift and asserts its exact case constants; text-only but not independent of copied-data proof."
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/per-action-branches/verify_paths.py",
+      "source_sha256": "734196be1d5eab910cb7bd1502387b8999e0dfd00205052a8a2c8d424b95f78a",
+      "source_bytes": 10308,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Embeds selected installed-vstdlib instruction addresses/operand strings as exact proof transcript; requires selective transcript redaction."
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/run_owned_probe.py",
+      "source_sha256": "d9f0069e1afe5073cac76f0c932701c1033996bd2226ece25273c64a0143734b",
+      "source_bytes": 2093,
+      "disposition": "staged_source_only",
+      "reason": "authored-only probe replay; presently blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/fp-status/run_owned_probe.py",
+      "staged_sha256": "9c5cb1fa9fb4ddb0aba7eaf17bac4106f2b347efd6d4365997c75d8f4cdfefb7",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/fp-status/static_status.py",
+      "source_sha256": "7aed0ef5f48a75f8c2702790b7ebbfb3b56a370499ba9b5f3001ba7198e4eadf",
+      "source_bytes": 4277,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Embeds selected installed-vstdlib instruction addresses/operand strings as exact proof transcript; requires selective transcript redaction."
+    },
+    {
+      "research_path": "vstdlib-rng/nan-payload/analyze_run1.py",
+      "source_sha256": "a3393c9a7a56f2de9414df2d8661c85187f314680b03906f1b1d81d21807c843",
+      "source_bytes": 4041,
+      "disposition": "staged_source_only",
+      "reason": "text-only historical-capture classifier; private captures excluded",
+      "staged_path": "source/vstdlib-rng/nan-payload/analyze_run1.py",
+      "staged_sha256": "1814b8a1296bc0fb8e24fa61458e51e7fc0c935dbc06f7f7ecc60e073881f85f",
+      "transformations": [
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/nan-payload/static_verify.py",
+      "source_sha256": "9a114ae6898b6590ba7ec60c0ddab61aa3700784105e85e96182403adb9b886c",
+      "source_bytes": 5898,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Embeds selected installed-vstdlib instruction addresses/operand strings as exact proof transcript; requires selective transcript redaction."
+    },
+    {
+      "research_path": "vstdlib-rng/nan-payload/validate_source_run1.py",
+      "source_sha256": "a1b2d40a7e2502b292b93abe00902de4503e2dddb6f74f13199b22fa7bdd9ac0",
+      "source_bytes": 3551,
+      "disposition": "staged_source_only",
+      "reason": "authored-only probe replay and text comparator; absent capture and blocked core inputs",
+      "staged_path": "source/vstdlib-rng/nan-payload/validate_source_run1.py",
+      "staged_sha256": "ac2dce92bbb387b27ad0639522e713c684e0f7048598adb0d016c298f98d8bf7",
+      "transformations": [
+        "archived run and report path -> explicit environment",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-preparation/native_rng_reference.cpp",
+      "source_sha256": "7e5583f5504356b12b6027c9b6985c4427212cf508ad350f073a76e1ea4f39db",
+      "source_bytes": 24273,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-preparation/verify_prepared_harness.py",
+      "source_sha256": "cb3450033db3633a3cbefbc3e2df54e3cdae515c6517498afdec4216fe775a7a",
+      "source_bytes": 4463,
+      "disposition": "hold_raw_closure_proof",
+      "reason": "Verifies VM-only original-DLL loader harness, import paths and binary admission; not part of source-only public tooling."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-1/compare_vm_rng.py",
+      "source_sha256": "adbf08191c979f691a62fc8070f1ea1cd85b3029da3bf05b0fb676efa41d6a76",
+      "source_bytes": 5169,
+      "disposition": "staged_source_only",
+      "reason": "text-only authored/native RNG comparator; private capture omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-1/compare_vm_rng.py",
+      "staged_sha256": "8082d2179dc2e6199a0cd9b21c6d4d22b98f59dc7b969e6b72be543e524e7590",
+      "transformations": [
+        "capture directory, output directory, guest identity/paths and address delta -> explicit environment",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-2/compare_vm_rng.py",
+      "source_sha256": "a2e5e74e8c022536ab2388d3f79652aa39b100b7f33959a0fb52c62448192c66",
+      "source_bytes": 5589,
+      "disposition": "staged_source_only",
+      "reason": "text-only authored/native RNG comparator; private capture omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-2/compare_vm_rng.py",
+      "staged_sha256": "140f5e24a6ffd50eb5df57e22f72eb97820129059c270d21924dfb56260feb7a",
+      "transformations": [
+        "capture directory, output directory, guest identity/paths and address delta -> explicit environment",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/authored-rng/include/fc/bruteforce.hpp",
+      "source_sha256": "54b446fbe26f8d3730d44699a4a75bd8b8c1a5c8196da62f5ac7425de0cb99f8",
+      "source_bytes": 2445,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Archived source snapshot duplicates active include/src/tests, including the copied exponent table in the snapshot."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/authored-rng/include/fc/uniform_random.hpp",
+      "source_sha256": "09bb9d56bf65884495357f7cfd0d424c8f06a2e9e64df28bb80a3b9ee13ab366",
+      "source_bytes": 1120,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Archived source snapshot duplicates active include/src/tests, including the copied exponent table in the snapshot."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/authored-rng/src/uniform_random.cpp",
+      "source_sha256": "8a19e3d19fdc0259baa3b03199b0d22ba60a794e3bf40e3620069df6440569f7",
+      "source_bytes": 3066,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Archived source snapshot duplicates active include/src/tests, including the copied exponent table in the snapshot."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/authored-rng/src/uniform_random_exp.cpp",
+      "source_sha256": "f7147f19c8d7edc0b888c2f1eb3d7c92fe852c9630d73f09a713634aa922abdb",
+      "source_bytes": 10349,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Archived source snapshot duplicates active include/src/tests, including the copied exponent table in the snapshot."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/authored-rng/src/uniform_random_exp_tables.inc",
+      "source_sha256": "cda810a1dd1ae40a0b3158bf5ffc393a24012cbef96e7475ee5afd5583550926",
+      "source_bytes": 5147,
+      "disposition": "exclude_copied_data",
+      "reason": "Archived duplicate of exact proprietary vstdlib data interval; no public redistribution claim."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/native_rng_per_action_reference.cpp",
+      "source_sha256": "c494279e9eefa2d1c5dfc5f97346ed9f3c761571341b4e215a09a3db5c51c299",
+      "source_bytes": 25626,
+      "disposition": "exclude_original_loader",
+      "reason": "VM-only observer/harness maps, loads or calls original proprietary code; outside public release scope."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/owned_per_action_fp_probe.cpp",
+      "source_sha256": "305724e0a2ebbb50dfb3c750468d30ec74ac4175a6806b37915a0cc11cff64da",
+      "source_bytes": 5065,
+      "disposition": "staged_source_only",
+      "reason": "authored-only RNG status probe; blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/owned_per_action_fp_probe.cpp",
+      "staged_sha256": "305724e0a2ebbb50dfb3c750468d30ec74ac4175a6806b37915a0cc11cff64da",
+      "transformations": []
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/compare_post.py",
+      "source_sha256": "2c62fc9fb1a9c087d5bb511d85d8c25a73b76c3aca639e8dd9e21228b5e04e56",
+      "source_bytes": 5928,
+      "disposition": "staged_source_only",
+      "reason": "strict text-only post-fix comparator; private captures omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/compare_post.py",
+      "staged_sha256": "063ed864ee324a6d54b1fe2b255c78f5eb6ca9c9dc06c6b3d041bb319b97fa87",
+      "transformations": [
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/compare_run3.py",
+      "source_sha256": "0623eae7027f884ea3760d2b70e1b4f53b89aba971dbd43b15625ce6c01a15a2",
+      "source_bytes": 29754,
+      "disposition": "staged_source_only",
+      "reason": "strict text-only per-action comparator; private captures and media omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/compare_run3.py",
+      "staged_sha256": "ba7c33fb11501db6d1cd3bfa983ac23cfbde6feaeefdd9b11848897bea47ddab",
+      "transformations": [
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/revalidate_prior_rng_after_run3.py",
+      "source_sha256": "aaee6cae9821aa0084376ff7d33234656a35a3a13cbe46456c98338c79de9ee4",
+      "source_bytes": 5425,
+      "disposition": "staged_source_only",
+      "reason": "authored-only prior-run replay; presently blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/revalidate_prior_rng_after_run3.py",
+      "staged_sha256": "3e51a3ea67982a20068c1bce819b74443f08b0bf0b64b81ebf9ed52a1a933c37",
+      "transformations": [
+        "authored source root -> FC_RESEARCH_SOURCE_ROOT",
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/run_owned_post.py",
+      "source_sha256": "e1685ade59882d16bd59308b9cfa41600d8849e84ce9e6035672742716cf98e1",
+      "source_bytes": 5801,
+      "disposition": "staged_source_only",
+      "reason": "authored-only post-fix probe replay; presently blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/run_owned_post.py",
+      "staged_sha256": "db8d71a406e584d5bd8f139972a6285d1df277f606d184b4bb23adb265810dd5",
+      "transformations": [
+        "authored source root -> FC_RESEARCH_SOURCE_ROOT",
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/run_state_post.py",
+      "source_sha256": "e938cee7d7af704c0d1c0bada00ed40e26a90d4fee5ce6912cedbcd39c07e043",
+      "source_bytes": 3686,
+      "disposition": "staged_source_only",
+      "reason": "authored-only full-state probe replay; presently blocked by absent public exponent table",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/run_state_post.py",
+      "staged_sha256": "5a4acb0a769a97d15e69f1c10afd1a7a6439391af8042761473e65375fea5c94",
+      "transformations": [
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/private-workflow/test_compare_post.py",
+      "source_sha256": "2543a76b01041604dc2664b6a86017c0966c28fb82b20aa29cfdfc00f037cc2c",
+      "source_bytes": 2117,
+      "disposition": "staged_source_only",
+      "reason": "synthetic text-only post-comparator controls; private archive omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/private-workflow/test_compare_post.py",
+      "staged_sha256": "36dd01b631265cd70f5803c23f0f4ebbdc698b7831e1e9f352151283bff6b6b0",
+      "transformations": [
+        "archived input, guest identity, authored source/probe locations -> explicit environment where present",
+        "all generated output routed to required external FC_RESEARCH_OUTPUT_DIR; public-tree paths rejected",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/regression/compare_status.py",
+      "source_sha256": "acaa2f1455b81ee397ae48392cddc898a4074bb2dca14fd22dcde95a0e187a71",
+      "source_bytes": 11576,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Byte-identical SHA-256 duplicate of staged fp-status/compare_status.py; stage primary authored comparator only."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/regression/owned_status_probe.cpp",
+      "source_sha256": "e30bb738e222328b58df84b243a4e2bcc9d6c15b4aece8608562e8940019d978",
+      "source_bytes": 4444,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Byte-identical SHA-256 duplicate of staged fp-status/owned_status_probe.cpp; stage primary authored probe only."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/regression/uniform_random_tests.cpp",
+      "source_sha256": "0f18a0d77f09db76a5bcb2ca89923f58d59fe760f6c124005245a67b0edf8772",
+      "source_bytes": 17259,
+      "disposition": "exclude_duplicate_snapshot",
+      "reason": "Archived source snapshot duplicates active include/src/tests, including the copied exponent table in the snapshot."
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/test_verify_archive.py",
+      "source_sha256": "5313a475cda7a3d582c9eeb8ebd96fc431e1f6aaa09ef29bac2ebf73fa7bcf60",
+      "source_bytes": 3059,
+      "disposition": "staged_source_only",
+      "reason": "synthetic archive-verifier controls; required archived input texts omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/test_verify_archive.py",
+      "staged_sha256": "2b4dd0e639026944b0eb7155839b67613803aa7fb66af2537a44f4195bf998b6",
+      "transformations": [
+        "reject Python -O where assertions enforce bounds/provenance"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/native-reference-run-3/verify_archive.py",
+      "source_sha256": "b6214fc881e917cfffeae60b048b980933cf7fcde58e7145dc299f00ff61f681",
+      "source_bytes": 43148,
+      "disposition": "staged_source_only",
+      "reason": "portable strict text archive verifier; required archived input texts omitted",
+      "staged_path": "source/vstdlib-rng/native-reference-run-3/verify_archive.py",
+      "staged_sha256": "7ffd115164d45bb56a00a1756309728416f19249855cc94a9b5f9c01b524d789",
+      "transformations": [
+        "archived input and guest identity -> explicit environment",
+        "disable __pycache__ writes from local imports"
+      ]
+    },
+    {
+      "research_path": "vstdlib-rng/stream-dispatch/verify_dispatch.py",
+      "source_sha256": "ceae97c93eea3af5ed2ad30c91e581e78d09f1b6d85dd04ad9dfc3c7b12253fb",
+      "source_bytes": 9553,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    },
+    {
+      "research_path": "vstdlib-rng/verify_profile_rng.py",
+      "source_sha256": "81fdbcd3da221f370162aecacae2970a3528d5160acaf1d92e17d80b5ea7c4e4",
+      "source_bytes": 13052,
+      "disposition": "hold_instruction_or_table_proof",
+      "reason": "Selected original vstdlib instruction/table extraction or differential interpreter; needs proprietary-data review."
+    }
+  ]
+}

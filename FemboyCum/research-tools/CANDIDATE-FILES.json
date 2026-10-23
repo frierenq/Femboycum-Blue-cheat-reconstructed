@@ -1,0 +1,238 @@
+{
+  "schema": 1,
+  "scope": "source and text manifest only; no inputs, outputs, or executable artifacts",
+  "source_files": 44,
+  "reviewed_source_files": 171,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6859,
+      "sha256": "96b95f5d9eb01047158d76530e808442c9f287873e025fa1b0d584395078efc6"
+    },
+    {
+      "path": "TRANSFORMATIONS.json",
+      "bytes": 90154,
+      "sha256": "510bc4c312f0cb294ad0bbdb2675f92c881b951bb11310ff1ccef1b9bafce1a1"
+    },
+    {
+      "path": "source/checkpoint-24/reset-eligibility/inspect_common.py",
+      "bytes": 887,
+      "sha256": "c7e7149bd0e739344c294d40ffa8e6153a52b35aa2828c2998aac6e554c9ce62"
+    },
+    {
+      "path": "source/checkpoint-24/reset-eligibility/inspect_nearby.py",
+      "bytes": 786,
+      "sha256": "3754174e98b7612741a8e7111d2d1656e58d1b94bbba76f5e69fa546cafda508"
+    },
+    {
+      "path": "source/checkpoint-24/reset-eligibility/scan_code_constant_windows.py",
+      "bytes": 5336,
+      "sha256": "f6accbe540ac68cac76a5d7a43450975c0ff03394d998318d6f80acf1563c94f"
+    },
+    {
+      "path": "source/checkpoint-24/reset-eligibility/scan_computed_pointer_leads.py",
+      "bytes": 5828,
+      "sha256": "b73e8b39a2708b9d871dfd441df392664ea4f0c2b8e1e58e0b636ff0c183ea6c"
+    },
+    {
+      "path": "source/checkpoint-24/reset-eligibility/scan_references.py",
+      "bytes": 2553,
+      "sha256": "c6c2265586bb820e9110f5f06610ac1cbaf729851658097ff9942656def65676"
+    },
+    {
+      "path": "source/checkpoint-25/hook-installer/abstract_trace.py",
+      "bytes": 29722,
+      "sha256": "6e900a39f7f731c1ab88d78a2581b9300c60f863ec607627c51a39cbff5474e4"
+    },
+    {
+      "path": "source/checkpoint-25/hook-installer/finite_shift_forks.py",
+      "bytes": 3726,
+      "sha256": "d82e9227cc7e3af3d1455415eefcc602efb161168443b32a2bdd5d85c01ef51f"
+    },
+    {
+      "path": "source/checkpoint-25/hook-installer/finite_shift_second.py",
+      "bytes": 3554,
+      "sha256": "9c64bc7371a3533af710c29d5a914417fbbb1c5590f8d23da9e836f39c34f1f5"
+    },
+    {
+      "path": "source/checkpoint-25/hook-installer/verify_abstract_primitives.py",
+      "bytes": 2220,
+      "sha256": "4cf807e3dd484a3132cd5a53a99307a3ebf687347e2a04e482a698866bb9d064"
+    },
+    {
+      "path": "source/checkpoint-26/installer-symbolic/wrapper_disasm.py",
+      "bytes": 1168,
+      "sha256": "ab5dc743e88421c495afada8cad2c979991900b357f47792bf61b9fdb92af65c"
+    },
+    {
+      "path": "source/lua-events/bf-write/bootstrap-first-call-static/query_dia.cpp",
+      "bytes": 5868,
+      "sha256": "6fac26a3ee7d34d1d03cda9d6d591d7fdb5cc0b41f3b8f2fc772b7e64af8cbd0"
+    },
+    {
+      "path": "source/lua-events/bf-write/bootstrap-static/query_dia.cpp",
+      "bytes": 5682,
+      "sha256": "2c59e5ebafae75e871ebdf7ea4a613752ad782ca005608da0de16e982bc1598b"
+    },
+    {
+      "path": "source/lua-events/bf-write/native-reference-run-1/compare_results.py",
+      "bytes": 11309,
+      "sha256": "9c2d83fe857f40e5f66f24f6d302675fda393c32ac8fe9b9da0c00e61476c4a2"
+    },
+    {
+      "path": "source/lua-events/bf-write/native-reference-run-1/generate_cases.py",
+      "bytes": 7491,
+      "sha256": "1db9ad7a41bf3c706bccdd086b60e0150f5bc0a6a6c1447202500e5fcaf84883"
+    },
+    {
+      "path": "source/lua-events/bf-write/native-reference-run-1/test_compare_results.py",
+      "bytes": 7293,
+      "sha256": "21c7f1c1692607130fcddb049457feacc9161729e038fb8fcec4ed46dc532c5a"
+    },
+    {
+      "path": "source/lua-events/bf-write/native-reference-run-1/tools/owned-probe/owned_probe.cpp",
+      "bytes": 9198,
+      "sha256": "9fd809679d1fab6e4ba62953fd90042faeb0d517b2ac946313b30211f4b1e96d"
+    },
+    {
+      "path": "source/lua-events/voice-message-projection/oracle_probe.cpp",
+      "bytes": 1168,
+      "sha256": "28f81ffd69f5751b7a7e81a11e91f3ce6659e09da1e201067f3d16776313f01f"
+    },
+    {
+      "path": "source/runtime-identification/probe_runtime.py",
+      "bytes": 3532,
+      "sha256": "98262b34be8f5b0925565b569c92eb4df16620292c9ed7c3e7fac579985d5b0c"
+    },
+    {
+      "path": "source/runtime-identification/probe_sources.py",
+      "bytes": 4224,
+      "sha256": "c8da044bdb1b16a8188b9e0894c2749834e635a5c129ca6105509b5f1f53c57c"
+    },
+    {
+      "path": "source/runtime-identification/probe_xrefs.py",
+      "bytes": 4136,
+      "sha256": "09d47cf50116fdff2cd20e9867357049fd8976aaafda8928433199b16f1e05f5"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/fetch_registry_reader.py",
+      "bytes": 3300,
+      "sha256": "510f86b95f359569b9614d6e6ce8f39b2e5f625a9b7aa4aa6fcc781216902e22"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/select_receipts.py",
+      "bytes": 5858,
+      "sha256": "e6aa533fa76c43f36e79bc4276040fa29fb5e206c48cf603b88e8f6aaec77494"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/verify_receipts.py",
+      "bytes": 2469,
+      "sha256": "fe91631a6bdbb4f5bda55e54f93402e0eaca112699a7db223ac8019006fdf84f"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/vm_offline_hives.py",
+      "bytes": 9623,
+      "sha256": "5acdb870faffdc97306dc2e080debe768f3951136f5b851c8c6b20cf3a4122cc"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/vm_offline_ntfs.py",
+      "bytes": 10423,
+      "sha256": "d3da70626dabfed38c6325462c60117fc203e8ea209e7ff98c68f4074a1eea10"
+    },
+    {
+      "path": "source/vm-offline-inspection/tools/vm_offline_vdi.py",
+      "bytes": 9838,
+      "sha256": "dba6c45f14d02e4301ca0d6ae3c210a7a832dbebb9e9b4ff7272b48762c620d8"
+    },
+    {
+      "path": "source/vstdlib-rng/float-helper-cfg.py",
+      "bytes": 6571,
+      "sha256": "f4cc253a8211e90db171a89f93ecb4b35c0f8ecb0501de9507f5f853af2634b7"
+    },
+    {
+      "path": "source/vstdlib-rng/fp-status/compare_status.py",
+      "bytes": 11619,
+      "sha256": "0fc251e43a93c97f62225ca19df7701c4f53ac34a457c727115112d03e926343"
+    },
+    {
+      "path": "source/vstdlib-rng/fp-status/make_validation_receipt.py",
+      "bytes": 5376,
+      "sha256": "cd3a81c12dc234a8c6ace571dea5f199a179660d09942d1e6a4f9e737911722f"
+    },
+    {
+      "path": "source/vstdlib-rng/fp-status/owned_status_probe.cpp",
+      "bytes": 4444,
+      "sha256": "e30bb738e222328b58df84b243a4e2bcc9d6c15b4aece8608562e8940019d978"
+    },
+    {
+      "path": "source/vstdlib-rng/fp-status/run_owned_probe.py",
+      "bytes": 3396,
+      "sha256": "9c5cb1fa9fb4ddb0aba7eaf17bac4106f2b347efd6d4365997c75d8f4cdfefb7"
+    },
+    {
+      "path": "source/vstdlib-rng/nan-payload/analyze_run1.py",
+      "bytes": 5320,
+      "sha256": "1814b8a1296bc0fb8e24fa61458e51e7fc0c935dbc06f7f7ecc60e073881f85f"
+    },
+    {
+      "path": "source/vstdlib-rng/nan-payload/validate_source_run1.py",
+      "bytes": 4796,
+      "sha256": "ac2dce92bbb387b27ad0639522e713c684e0f7048598adb0d016c298f98d8bf7"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-1/compare_vm_rng.py",
+      "bytes": 6544,
+      "sha256": "8082d2179dc2e6199a0cd9b21c6d4d22b98f59dc7b969e6b72be543e524e7590"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-2/compare_vm_rng.py",
+      "bytes": 6964,
+      "sha256": "140f5e24a6ffd50eb5df57e22f72eb97820129059c270d21924dfb56260feb7a"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/owned_per_action_fp_probe.cpp",
+      "bytes": 5065,
+      "sha256": "305724e0a2ebbb50dfb3c750468d30ec74ac4175a6806b37915a0cc11cff64da"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/compare_post.py",
+      "bytes": 7243,
+      "sha256": "063ed864ee324a6d54b1fe2b255c78f5eb6ca9c9dc06c6b3d041bb319b97fa87"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/compare_run3.py",
+      "bytes": 31049,
+      "sha256": "ba7c33fb11501db6d1cd3bfa983ac23cfbde6feaeefdd9b11848897bea47ddab"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/revalidate_prior_rng_after_run3.py",
+      "bytes": 6705,
+      "sha256": "3e51a3ea67982a20068c1bce819b74443f08b0bf0b64b81ebf9ed52a1a933c37"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/run_owned_post.py",
+      "bytes": 7065,
+      "sha256": "db8d71a406e584d5bd8f139972a6285d1df277f606d184b4bb23adb265810dd5"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/run_state_post.py",
+      "bytes": 4967,
+      "sha256": "5a4acb0a769a97d15e69f1c10afd1a7a6439391af8042761473e65375fea5c94"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/private-workflow/test_compare_post.py",
+      "bytes": 3430,
+      "sha256": "36dd01b631265cd70f5803c23f0f4ebbdc698b7831e1e9f352151283bff6b6b0"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/test_verify_archive.py",
+      "bytes": 3129,
+      "sha256": "2b4dd0e639026944b0eb7155839b67613803aa7fb66af2537a44f4195bf998b6"
+    },
+    {
+      "path": "source/vstdlib-rng/native-reference-run-3/verify_archive.py",
+      "bytes": 43191,
+      "sha256": "7ffd115164d45bb56a00a1756309728416f19249855cc94a9b5f9c01b524d789"
+    }
+  ]
+}
